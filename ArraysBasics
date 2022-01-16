@@ -1,0 +1,49 @@
+//-------------------------------------Arrays Basic Concepts------------------------------------------------
+
+
+package reference;
+import java.util.*;
+/**
+ *
+ * @author Sudhakar
+ */
+public class ArraysBasics {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        
+        int i,c,n;
+        
+        System.out.println("ENTER LIMIT FOR ARRAY INT AND STRING:");
+        n=s.nextInt();
+        int a[]=new int [n];//Array with index value & array inzialltion
+        
+        //Integer Value
+        c=1;
+        for(i=0;i<n;i++)
+        { 
+          c=c+1;
+          a[i]=c+s.nextInt();
+        
+        }
+        
+         System.out.println(Arrays.toString(a));
+        //String value
+        int m;
+        String ab[];
+        ab=new String [n];
+        
+        for(m=0;m<n;m++)
+        { 
+           
+            ab[m]=s.next();
+        
+        }
+        System.out.println(Arrays.toString(ab));
+        
+        
+        
+        
+    }
+    
+}
