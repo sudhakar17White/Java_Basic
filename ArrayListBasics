@@ -1,0 +1,39 @@
+package reference;
+import java.util.*;
+
+public class ArrayListBasics {
+    public static void main(String args[])
+    {
+      Scanner s=new Scanner(System.in);
+      
+      ArrayList<String> a=new ArrayList<String>();   //it has no limit array list best  //String data type array list
+       ArrayList<Integer> b=new ArrayList<>(); //Integer data type array list
+      
+      int i,n;
+      
+      n=s.nextInt();
+      
+      
+      for(i=0;i<n;i++)
+      {  
+      
+        String k=s.next();
+        a.add(k);
+      
+      }
+      System.out.println(a);
+       
+      for(i=0;i<n;i++)
+      {  
+      
+        int c=s.nextInt();
+        b.add(c);
+      
+      }
+      System.out.println(b);
+    
+    
+    
+    }
+    
+}
