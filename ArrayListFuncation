@@ -1,0 +1,79 @@
+
+package reference;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+
+public class ArrayListFuncation {
+    public static void main(String args[])
+    { 
+        
+        ArrayList<Integer> a=new ArrayList<>();
+        ArrayList<String> b=new ArrayList<>();
+        
+        //integer add funcation
+        
+        a.add(2);
+        a.add(3);
+        a.add(4);
+        a.add(5);
+        
+        System.out.println(a);
+        
+        //String add funcation
+        
+        b.add("kick");
+        b.add("sjdfisj");
+        b.add("sdiijf");
+        b.add("kcikdj");
+        
+        System.out.println(b);
+        
+        //remove element
+        
+        
+        a.remove(2);
+        a.remove(3);
+        
+        System.out.println(a);
+        
+         
+        //remove String  element
+        
+        b.remove(0);
+        b.remove(1);
+       
+        System.out.println(b);
+        
+        
+        //iterating integer element
+        for(int x:a)
+        { 
+        
+        System.out.println(x);
+        
+        }
+        
+        //iterating string elemrnt
+        
+        for(String y:b)
+        { 
+        
+        System.out.println(y);
+        
+        }
+        
+        //sorting any elment in arraylist
+        Collections.sort(a);
+        
+        System.out.println(a);
+        
+        
+        
+        
+    
+    }
+    
+}
+// this easy to do this arraylist programm......
