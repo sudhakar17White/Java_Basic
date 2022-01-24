@@ -1,0 +1,97 @@
+
+package reference;
+import java.util.Scanner;
+
+/*
+Constructor with parameter and without parameter
+
+Constructor is class name should be same,while object createing constructor shuold automatically excute
+*/
+
+
+//WITHOUT PARAMETER
+
+class Kick
+{ 
+    int a,b;
+   //With out parameter 
+   Kick()
+   {
+   
+       a=15;
+       b=10;
+       System.out.println(a+b);
+   
+   }
+
+
+}
+
+
+
+
+public class Constructors {
+    public static void main(String args[])
+    { 
+    
+    Kick k=new Kick();
+    
+    
+    }
+}
+
+/*=================================================================================================================*/
+
+WITH PARAMETER
+
+
+
+
+package reference;
+import java.util.Scanner;
+
+/*
+Constructor with parameter and without parameter
+
+Constructor is class name should be same,while object createing constructor shuold automatically excute
+*/
+
+class Kick
+{ 
+   
+   //With parameter 
+   Kick(int a,int b)
+   {
+       
+       System.out.println(a+b);
+   
+   }
+
+
+}
+
+
+
+
+public class Constructors {
+    public static void main(String args[])
+    { 
+    Scanner s=new Scanner(System.in);
+    
+    int a,b;
+    
+    a=s.nextInt();
+    b=s.nextInt();
+        
+    Kick k=new Kick(a,b);
+    
+    
+    }
+}
+
+
+//Very easy to understand it........
+
+
+
+
