@@ -1,0 +1,158 @@
+
+package reference;
+import java.util.Scanner;
+
+//Single inhetitance
+
+
+class Inherit
+{ 
+    int a=9,b=7;
+    void rock()
+    { 
+      System.out.println(a+b);
+    
+    }
+
+
+}
+class error extends Inherit
+{ 
+
+    void r2()
+    { 
+      System.out.println(a-b);  
+    
+    }
+
+}
+
+
+public class Inheritance {
+    public static void main(String args[])
+    { 
+    
+        error r=new error();
+        r.r2();
+        r.rock();
+    }
+}
+
+/*=================================================================================================================*/
+
+
+MULTI-LEVEL INHERITANCE
+
+
+
+package reference;
+import java.util.Scanner;
+
+class Inherit
+{ 
+    int a=9,b=7;
+    void rock()
+    { 
+      System.out.println(a+b);
+    
+    }
+
+
+}
+class error extends Inherit
+{ 
+
+    void r2()
+    { 
+      System.out.println(a-b);  
+    
+    }
+
+}
+class rc extends error
+{ 
+
+    void rcr()
+    { 
+    
+        System.out.println(a*b);
+    
+    }
+
+}
+
+
+public class Inheritance {
+    public static void main(String args[])
+    { 
+    
+       rc r=new rc();
+        r.r2();
+        r.rock();
+        r.rcr();
+    }
+}
+
+
+/*=================================================================================================*/
+
+HIERARCHICAL INHERITANCE
+
+
+
+
+package reference;
+import java.util.Scanner;
+
+class Inherit
+{ 
+    int a=9,b=7;
+    void rock()
+    { 
+      System.out.println(a+b);
+    
+    }
+
+
+}
+class error extends Inherit
+{ 
+
+    void r2()
+    { 
+      System.out.println(a-b);  
+    
+    }
+
+}
+class rc extends Inherit
+{ 
+
+    void rcr()
+    { 
+    
+        System.out.println(a*b);
+    
+    }
+
+}
+
+
+public class Inheritance {
+    public static void main(String args[])
+    { 
+       Inherit in=new Inherit();
+       error r=new error();
+       in.rock();
+       r.r2();
+       rc rr=new rc();
+       rr.rcr();
+      
+       
+       
+       
+    }
+}
+
+
+
