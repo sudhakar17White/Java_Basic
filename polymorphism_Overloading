@@ -1,0 +1,54 @@
+
+package reference;
+import java.util.Scanner;
+
+//COMPILE TIME POLYMORPHISM
+
+/*METHOD OVERLOADING 
+
+    Method name and its return type should be same,but diffrente in parameters
+
+*/
+class ERORR
+{ 
+    
+    int kick(int a,int b)
+    { 
+    
+    
+    System.out.println(a+b);
+    return a+b;
+    
+    }
+    String kick(String a,String b)
+    {
+    
+    System.out.println(a+b);
+    return a+b;
+    } 
+
+
+}
+
+
+public class polymorphism {
+    public static void main(String args[])
+    { 
+      int a,b;
+      String A,B;
+      
+      Scanner s=new Scanner(System.in);
+      
+      ERORR er=new ERORR();
+      
+      a=s.nextInt();
+      b=s.nextInt();
+      
+      A=s.next();
+      B=s.next();
+      
+      er.kick(a, b);
+      er.kick(A, B);
+    
+    }
+}
