@@ -1,0 +1,67 @@
+
+package reference;
+import java.util.Scanner;
+
+//RUN TIME POLYMORPHISM
+
+/*METHOD OVERRIDING
+
+    Method name and its return type should be same and its parameter sholud be same 
+
+    while object create by parant class refferance to call other method
+
+*/
+class ERORR
+{ 
+    
+    int kick(int a,int b)
+    { 
+    
+    
+    System.out.println(a+b);
+    return a+b;
+    
+    }
+   
+
+
+}
+class yt extends ERORR
+{ 
+    
+     String kick(String a,String b)
+    {
+    
+    System.out.println(a+b);
+    return a+b;
+    } 
+    
+        
+    
+}
+
+
+public class polymorphism {
+    public static void main(String args[])
+    { 
+      int a,b;
+      String A,B;
+      
+      Scanner s=new Scanner(System.in);
+      
+      ERORR er=new ERORR();
+      
+      a=s.nextInt();
+      b=s.nextInt();
+      
+      A=s.next();
+      B=s.next();
+      
+      
+      
+      er=new yt();
+      er.kick(a,b);
+      
+    
+    }
+}
