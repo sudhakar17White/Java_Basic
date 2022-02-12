@@ -1,0 +1,123 @@
+//without throw
+import java.io.*; 
+  
+class Main { 
+    public static void main(String[] args) { 
+        FileReader file = new FileReader("C:\test\a.txt"); 
+        BufferedReader fileInput = new BufferedReader(file); 
+          
+        // Print first 3 lines of file "C:	esta.txt" 
+        for (int counter = 0; counter < 3; counter++)  
+            System.out.println(fileInput.readLine()); 
+          
+        fileInput.close(); 
+    } 
+} 
+
+
+//checked expection by throw 
+
+mport java.io.*; 
+  
+class Main { 
+    public static void main(String[] args) throws IOException { 
+        FileReader file = new FileReader("C:\test\a.txt"); 
+        BufferedReader fileInput = new BufferedReader(file); 
+          
+        // Print first 3 lines of file "C:	esta.txt" 
+        for (int counter = 0; counter < 3; counter++)  
+            System.out.println(fileInput.readLine()); 
+          
+        fileInput.close(); 
+    } 
+} 
+
+
+
+//unchecked expection
+
+package exception_handling;
+import java.util.Scanner;
+
+class Divder extends Exception
+{ 
+
+    public Divder(String str) 
+    {
+
+        super(str);
+        
+        
+    }
+  
+
+
+
+
+}
+
+
+
+
+
+
+
+class kick
+{ 
+        Scanner s=new Scanner(System.in);
+        
+
+        void f1()
+        {
+        int r,a;
+       
+        a=s.nextInt();
+        
+        try
+        { 
+            if(a==1)
+            { 
+            
+                throw new Divder("1 HAS DIVDED RETURN SAME VALUE");
+            
+            }
+            else
+            {
+            r=100/a;
+            System.out.println("100 DIVDEED BY "+a+"="+r);
+            }
+        }
+         catch(Divder d)
+        { 
+        
+            System.out.println(d+"retrun same value");
+        
+        
+        }
+        catch(Exception e)
+        { 
+        
+            System.out.println(e+"Con not divde by zreo");
+        
+        }
+       
+        
+     }
+  
+
+
+
+}
+
+public class Exception_Handling {
+
+   
+    public static void main(String[] args) {
+       
+        
+       
+        kick k=new kick();
+        k.f1();
+  }
+
+}
