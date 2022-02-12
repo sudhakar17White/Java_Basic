@@ -1,0 +1,155 @@
+/*
+Exception handling :
+          To handle the is an run time exception;
+
+            there types:
+                  * checked exception
+                  * unchecked exception
+                  * error
+
+Advantage:
+        To control the flow of program.
+
+*/
+
+
+
+
+package exception_handling;
+import java.util.Scanner;
+
+public class Exception_Handling {
+
+   
+    public static void main(String[] args) {
+       
+        
+        //Exception without htrow
+        Scanner s=new Scanner(System.in);
+
+        int r,a;
+       
+        a=s.nextInt();
+        
+        try
+        { 
+        
+            r=100/a;
+            System.out.println("100 DIVDEED BY "+a+"="+r);
+        
+        }
+        catch(Exception e)
+        { 
+        
+            System.out.println(e+"Con not divde by zreo");
+        
+        }
+        
+        
+        
+        
+        
+        
+    }
+    
+}
+
+ 
+ //Exception with htrow
+
+package exception_handling;
+import java.util.Scanner;
+
+class Divder extends Exception
+{ 
+
+    public Divder(String str) 
+    {
+
+        super(str);
+        
+        
+    }
+  
+
+
+
+
+}
+
+
+
+
+
+
+
+class kick
+{ 
+        Scanner s=new Scanner(System.in);
+        
+
+        void f1()
+        {
+        int r,a;
+       
+        a=s.nextInt();
+        
+        try
+        { 
+            if(a==1)
+            { 
+            
+                throw new Divder("1 HAS DIVDED RETURN SAME VALUE");
+            
+            }
+            else
+            {
+            r=100/a;
+            System.out.println("100 DIVDEED BY "+a+"="+r);
+            }
+        }
+         catch(Divder d)
+        { 
+        
+            System.out.println(d+"retrun same value");
+        
+        
+        }
+        catch(Exception e)
+        { 
+        
+            System.out.println(e+"Con not divde by zreo");
+        
+        }
+       
+        
+     }
+  
+
+
+
+}
+
+public class Exception_Handling {
+
+   
+    public static void main(String[] args) {
+       
+        
+       
+        kick k=new kick();
+        k.f1();
+
+        
+        
+        
+        
+        
+    }
+    
+}
+
+ 
+ 
+ 
+ 
